@@ -25,6 +25,7 @@ void setup()
   Serial.begin(9600);
   Wire.begin();         //Initialisation de la livrairie Wire
   Init_HMC5803L();    //Initialiser le module boussole
+  delay(100);
 }
 
 /**
@@ -52,7 +53,10 @@ void Init_HMC5803L(void)
   Wire.write(0x70);
 
   Wire.write(0x01);
-  Wire.write(0xA0);   //Règle un gain de 5
+  //Wire.write(0xA0);   //Règle un gain de 5
+
+    Wire.write(0b00000000); // 1.3 gain LSb / Gauss 1090 (default)
+    
   Wire.endTransmission();
 }
 
