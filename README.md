@@ -9,6 +9,8 @@ All **reports** will be written as a *.md* file in a folder `/reports/...`.
 - Names
     - Name 1
     - Name 2
+
+<img src="https://www.uhs.umich.edu/files/uhs/field/image/TEST.jpg" width="50px" />
     
 ## 1. Hardware
 
